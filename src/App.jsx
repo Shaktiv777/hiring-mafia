@@ -180,8 +180,62 @@ export default function App() {
             </div>
 
             <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black font-semibold">
-              Secure Checkout
-            </Button>
+  Secure Checkout
+</Button>
+
+{/* RAZORPAY BUTTONS */}
+<div className="mt-6 flex justify-center">
+
+  {activePlan === "basic" && (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_SGayQhu4UeuUlf"
+              async>
+            </script>
+          </form>
+        `
+      }}
+    />
+  )}
+
+  {activePlan === "pro" && (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_SGaxQbuKBnBidi"
+              async>
+            </script>
+          </form>
+        `
+      }}
+    />
+  )}
+
+  {activePlan === "elite" && (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_SGasRTmKBLH4hB"
+              async>
+            </script>
+          </form>
+        `
+      }}
+    />
+  )}
+
+</div>
+
 
             <p className="text-xs text-slate-500 mt-3 text-center">
               100% secure payment • Instant confirmation • GST invoice provided
