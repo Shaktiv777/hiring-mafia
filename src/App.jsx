@@ -290,25 +290,45 @@ useEffect(() => {
           </div>
 
           <div className="md:col-span-2 grid sm:grid-cols-2 gap-8 h-full">
-            {[
-              "Software Developer (SDE)",
-              "Data Analyst",
-              "Java Full-Stack Developer",
-              "Machine Learning Developer"
-            ].map((role, index) => (
-              <div
-                key={index}
-                className="bg-slate-900 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between min-h-[180px]"
-              >
-                <div>
-                  <p className="text-xs text-slate-400 mb-2">Resume {index + 1}</p>
-                  <h4 className="font-semibold mb-6">{role}</h4>
-                </div>
-                <Button className="bg-amber-500 hover:bg-amber-600 text-black font-semibold w-fit px-5">
-                  CLICK TO START
-                </Button>
-              </div>
-            ))}
+           {[
+  {
+    title: "Software Developer (SDE)",
+    link: "https://docs.google.com/document/d/1PVuARZObLazihzbPIDj99ZIHgb9GQcx1RPNlaFmSo1w/edit"
+  },
+  {
+    title: "Data Analyst",
+    link: "https://docs.google.com/document/d/16r2keD589zvEnZ-BHY7hBsKmZTAyxzUmFfHIxXJ0hU0/edit"
+  },
+  {
+    title: "Java Full-Stack Developer",
+    link: "https://docs.google.com/document/d/1SKm3s4L-sJg6UIaDkwwzzNjuekeVj3xWd9tewkLbhWg/edit"
+  },
+  {
+    title: "Machine Learning Developer",
+    link: "https://docs.google.com/document/d/1im-m48rUAGczSGO1wEb-df0LmH5Z-OErPAH0vZHma0I/edit"
+  }
+].map((item, index) => (
+  <div
+    key={index}
+    className="bg-slate-900 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between min-h-[180px]"
+  >
+    <div>
+      <p className="text-xs text-slate-400 mb-2">Resume {index + 1}</p>
+      <h4 className="font-semibold mb-6">{item.title}</h4>
+    </div>
+
+    <a
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Button className="bg-amber-500 hover:bg-amber-600 text-black font-semibold w-fit px-5">
+        CLICK TO START
+      </Button>
+    </a>
+  </div>
+))}
+
           </div>
         </div>
       </div>
