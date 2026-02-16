@@ -220,8 +220,6 @@ useEffect(() => {
               ))}
             </div>
 
-            <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black font-semibold">
-  
 
 <div className="mt-6 flex justify-center">
   <div id="razorpay-button-container"></div>
