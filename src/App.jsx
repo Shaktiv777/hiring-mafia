@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Crown, Gem } from "lucide-react";
@@ -123,7 +124,7 @@ export default function App() {
           <Gem className="w-6 h-6 text-amber-400" />
         </div>
         <p className="text-slate-400 text-sm max-w-xl mx-auto">
-          Accelerate your career with structured mentorship.
+          Accelerate your career with structured mentorship, elite job access, and strategic positioning.
         </p>
       </section>
 
@@ -150,7 +151,6 @@ export default function App() {
       <div className="max-w-2xl mx-auto px-6 pb-16">
         <Card className={`bg-slate-900 border ${current.border} rounded-2xl p-8`}>
           <CardContent>
-
             <div className="flex justify-between items-center mb-3">
               <h2 className={`text-lg font-semibold ${current.accent}`}>
                 {current.name} Plan
@@ -179,46 +179,98 @@ export default function App() {
               ))}
             </div>
 
-            {/* RAZORPAY BUTTONS */}
-            <div className="mt-6 flex justify-center">
+            <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black font-semibold">
+              Secure Checkout
+            </Button>
 
-              {activePlan === "basic" && (
-                <div dangerouslySetInnerHTML={{
-                  __html: `<form>
-                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                    data-payment_button_id="pl_SGayQhu4UeuUlf" async></script>
-                  </form>`
-                }} />
-              )}
-
-              {activePlan === "pro" && (
-                <div dangerouslySetInnerHTML={{
-                  __html: `<form>
-                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                    data-payment_button_id="pl_SGaxQbuKBnBidi" async></script>
-                  </form>`
-                }} />
-              )}
-
-              {activePlan === "elite" && (
-                <div dangerouslySetInnerHTML={{
-                  __html: `<form>
-                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                    data-payment_button_id="pl_SGasRTmKBLH4hB" async></script>
-                  </form>`
-                }} />
-              )}
-
-            </div>
-
-            <p className="text-xs text-slate-500 mt-4 text-center">
+            <p className="text-xs text-slate-500 mt-3 text-center">
               100% secure payment • Instant confirmation • GST invoice provided
             </p>
-
           </CardContent>
         </Card>
+      </div>
+
+      {/* TONIGHT FLOW */}
+      <div className="max-w-6xl mx-auto px-6 pb-20">
+        <h2 className="text-3xl font-bold mb-8">Tonight's Flow</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="bg-amber-500 text-black text-xs px-3 py-1 rounded-full font-semibold">Step 1</span>
+              <span className="text-sm text-slate-400">9:00 – 9:30 PM</span>
+            </div>
+            <h3 className="font-semibold mb-3">ATS Resume Makeover</h3>
+            <ul className="text-sm text-slate-300 space-y-2 mb-4">
+              <li>• Fix summary, skills & projects for SDE/Data/ML/Full-Stack</li>
+              <li>• Add impact bullets (+metrics) recruiters scan for</li>
+              <li>• Score 90–95+ on ATS — live</li>
+            </ul>
+            <Button className="bg-slate-800 border border-slate-600 text-white">
+              Get Resume Template
+            </Button>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="bg-amber-500 text-black text-xs px-3 py-1 rounded-full font-semibold">Step 2</span>
+              <span className="text-sm text-slate-400">9:30 – 10:00 PM</span>
+            </div>
+            <h3 className="font-semibold mb-3">Hiring Sprint: Apply Together</h3>
+            <ul className="text-sm text-slate-300 space-y-2 mb-4">
+              <li>• 50–100+ verified links (FAANG, unicorns, MNCs)</li>
+              <li>• Shortlist hack: role-wise filters, referral notes</li>
+              <li>• Done-in-call applications</li>
+            </ul>
+            <Button className="bg-slate-800 border border-slate-600 text-white">
+              Unlock Apply Links
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* APPLY BASED ON ROLE */}
+      <div className="max-w-6xl mx-auto px-6 pb-24 mt-16">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6 md:col-span-1 h-full">
+            <h3 className="text-xl font-semibold mb-4">Apply Based on Role</h3>
+            <p className="text-sm text-slate-300 mb-4">How to Edit Your Resume</p>
+            <ol className="text-sm text-slate-400 space-y-2">
+              <li>1. Click on File in the top-left</li>
+              <li>2. Click on Make a copy</li>
+              <li>3. Edit your Name, College, CGPA, Email, Contact, LinkedIn</li>
+            </ol>
+            <p className="text-xs text-slate-500 mt-4">
+              Tip: Match skills, keywords & projects to the JD.
+            </p>
+          </div>
+
+          <div className="md:col-span-2 grid sm:grid-cols-2 gap-8 h-full">
+            {[
+              "Software Developer (SDE)",
+              "Data Analyst",
+              "Java Full-Stack Developer",
+              "Machine Learning Developer"
+            ].map((role, index) => (
+              <div
+                key={index}
+                className="bg-slate-900 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between min-h-[180px]"
+              >
+                <div>
+                  <p className="text-xs text-slate-400 mb-2">Resume {index + 1}</p>
+                  <h4 className="font-semibold mb-6">{role}</h4>
+                </div>
+                <Button className="bg-amber-500 hover:bg-amber-600 text-black font-semibold w-fit px-5">
+                  CLICK TO START
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
     </div>
   );
 }
+
