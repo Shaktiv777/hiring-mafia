@@ -40,7 +40,7 @@ const plans = {
   },
   elite: {
     name: "Elite Mafia",
-    price: 5994,
+    price: 19998,
     duration: "6 Months",
     accent: "text-amber-300",
     border: "border-amber-400/40",
