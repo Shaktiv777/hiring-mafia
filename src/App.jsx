@@ -112,10 +112,10 @@ useEffect(() => {
       script.setAttribute("data-payment_button_id", "pl_SNz6C9whai5xqV");
     }
     if (activePlan === "pro") {
-      script.setAttribute("data-payment_button_id", "pl_SGaxQbuKBnBidi");
+      script.setAttribute("data-payment_button_id", "pl_SNzBD3Tg6ppu7S");
     }
     if (activePlan === "elite") {
-      script.setAttribute("data-payment_button_id", "pl_SGasRTmKBLH4hB");
+      script.setAttribute("data-payment_button_id", "pl_SO003uwipcDMT7");
     }
 
     script.async = true;
