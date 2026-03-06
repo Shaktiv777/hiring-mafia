@@ -9,9 +9,9 @@ const REGISTRATION_DEADLINE = new Date(Date.now() + 60 * 60 * 1000);
 
 const plans = {
   basic: {
-    name: "Starter",
+    name: "Basic Plan",
     price: 6000,
-    duration: "6 months",
+    duration: "Till Placement",
     accent: "text-slate-200",
     border: "border-slate-700",
     badge: "Most Affordable",
@@ -24,9 +24,9 @@ const plans = {
     ]
   },
   pro: {
-    name: "Pro",
-    price: 11994,
-    duration: "6 months",
+    name: "Pro Hiring Support",
+    price: 11000,
+    duration: "Till Placement",
     accent: "text-indigo-300",
     border: "border-indigo-500/40",
     badge: "Most Popular",
@@ -39,9 +39,9 @@ const plans = {
     ]
   },
   elite: {
-    name: "Elite Mafia",
-    price: 19998,
-    duration: "6 Months",
+    name: "Premium hiring Support",
+    price: 21000,
+    duration: "Till Placement",
     accent: "text-amber-300",
     border: "border-amber-400/40",
     badge: "Best Value",
@@ -109,7 +109,7 @@ useEffect(() => {
     script.src = "https://checkout.razorpay.com/v1/payment-button.js";
 
     if (activePlan === "basic") {
-      script.setAttribute("data-payment_button_id", "pl_SGayQhu4UeuUlf");
+      script.setAttribute("data-payment_button_id", "pl_SNz6C9whai5xqV");
     }
     if (activePlan === "pro") {
       script.setAttribute("data-payment_button_id", "pl_SGaxQbuKBnBidi");
