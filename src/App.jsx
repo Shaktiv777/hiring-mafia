@@ -20,7 +20,7 @@ const plans = {
       "ATS Optimization (95+ Structure)",
       "5-6 Shortlist within a month",
       "30+ opportunities on daily basis once resume is ready",
-      " "
+      "Ideal for Starters"
     ]
   },
   pro: {
