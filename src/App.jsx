@@ -18,9 +18,9 @@ const plans = {
     features: [
       "Resume Refinement by Experts",
       "ATS Optimization (95+ Structure)",
-      "10-15 Shortlist within a month",
+      "5-6 Shortlist within a month",
       "30+ opportunities on daily basis once resume is ready",
-      "Ideal for Freshers & Interns"
+      " "
     ]
   },
   pro: {
@@ -33,7 +33,7 @@ const plans = {
     features: [
       "Full Resume Rebuild",
       "Strategic ATS Positioning",
-      "25-30 Shortlist within 1 months",
+      "10-15 Shortlist ",
       "50+ opportunities on daily basis once resume is ready",
       "Ideal for Experienced Professionals"
     ]
@@ -47,9 +47,9 @@ const plans = {
     badge: "Best Value",
     features: [
       "High-End Resume Engineering",
-      "Personalized Career Guidance",
-      "Guaranteed 50+ Shortlist within 1 month",
-      "100+ opportunities on daily basis once resume is ready",
+      "5k worth skill program Included",
+      "Guaranteed 20-30 Shortlist per month",
+      "For those who are really serious about dream job in FAANGs",
       "Ideal for Career Accelerators"
     ]
   }
