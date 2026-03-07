@@ -5,7 +5,7 @@ import { Sparkles, Crown, Gem } from "lucide-react";
 import { Card, CardContent } from "./components/ui/card";
 import { Button } from "./components/ui/button";
 
-const REGISTRATION_DEADLINE = new Date(Date.now() + 60 * 60 * 1000);
+const REGISTRATION_DEADLINE = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24 hours from now
 
 const plans = {
   basic: {
