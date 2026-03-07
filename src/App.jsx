@@ -18,7 +18,7 @@ const plans = {
     features: [
       "Resume Refinement by Experts",
       "ATS Optimization (95+ Structure)",
-      "5-6 Shortlist within a month",
+      "5-6 Interview Calls",
       "30+ opportunities on daily basis once resume is ready",
       "Ideal for Starters"
     ]
@@ -33,7 +33,7 @@ const plans = {
     features: [
       "Full Resume Rebuild",
       "Strategic ATS Positioning",
-      "10-15 Shortlist ",
+      "10-15 Interviews Calls ",
       "50+ opportunities on daily basis once resume is ready",
       "Ideal for Experienced Professionals"
     ]
@@ -48,7 +48,7 @@ const plans = {
     features: [
       "High-End Resume Engineering",
       "5k worth skill program Included",
-      "Guaranteed 20-30 Shortlist per month",
+      "20-30 Interviews Calls",
       "For those who are really serious about dream job in FAANGs",
       "Ideal for Career Accelerators"
     ]
