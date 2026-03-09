@@ -161,7 +161,7 @@ useEffect(() => {
         <div className="flex items-center justify-center gap-4 mb-4">
           <Crown className="w-7 h-7 text-amber-400" />
           <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-white via-amber-300 to-white bg-clip-text text-transparent">
-            Hiring Mafia
+            Hiring Support By Coding Club India
           </h1>
           <Gem className="w-6 h-6 text-amber-400" />
         </div>
